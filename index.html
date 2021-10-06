@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+    <title>ILLUSINK</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="img/logo1.png" class="logo">
+            <h2>ILLUSINK</h2>
+            <nav>
+                <ul id="menuList">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Company</a></li>
+                    <li><a href="">Contact Us</a></li>
+                    <li><a href="">Support</a></li>
+                </ul>
+            </nav>
+            <img src="img/menu.png" class="menu-icon" onclick="togglemenu()">
+        </div>
+
+        <div class="row">
+            <div class="col-1">
+                <h2>PEN V2<br>ILLUSINK 4</h2>
+                <h3>Pen with the illusionary ink to make words alive.</h3>
+                <p>(1 Pen/Upto 5 letters)</p>
+                <h4>$600</h4>
+                <button type="button">Buy Now<img src="img/arrow.png"></button>
+            </div>
+            <div class="color-picker">
+                <h7 id="color-name">Gold</h7>
+                <div class="color">
+                    <div class="gold" onclick="gold()"></div>
+                    <div class="rose-gold" onclick="rosegold()"></div>
+                    <div class="blue" onclick="blue()"></div>
+                </div>
+
+            </div>
+            <div class="col-2">
+                <img src="img/pen.png" class="controller" id="pen">
+                <div class="color-box"></div>
+                <div class="add-btn">
+                    <img src="img/add.png">
+                    <p><small>Add to cart</small></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="features">
+            <div class="col-1">
+                <h2>About</h2>
+                <br>
+            </div>
+            <div class="about" style="margin-top: 40px;">
+                <p>Our ink is made with the Purple Elixir discovered recently in the Dark Forest of Germany. Our
+                    research team discovered the illusionary effect of the elixir on viewer's mind and turned the elixir
+                    into ink.<br>
+                    Letters written using our pen has been found to help a lot of people around the globe in fixing the
+                    things and make the situations better.</p>
+            </div>
+
+        </div>
+        <div class="col-1" style="margin-top: 0; margin-bottom: 80px;">
+            <h2>Reviews</h2>
+            <br>
+        </div>
+        <div class="reviews">
+
+            <div class="box">
+                <h1>Elon Musk invited for Dinner.</h1>
+                <p>I'm a mechanical engineer and always being a fan of Elon Musk. Always had a desire to meet him. I've
+                    listened about the illusink pen, purchased one and wrote a fan letter. And, OMG it really worked, he
+                    literally invited me for a Dinner. Best desicion ever.</p>
+                <h2>Chris Hamstopher, Russia</h2>
+            </div>
+            <div class="box">
+                <h1>Going to marry Taylor Swift</h1>
+                <p>I always had a secret crush on the famous singer Taylor. I blindly love her but had no way to cross
+                    my path with her. With a little hope I purchased the illusink pen and wrote a love letter to her.
+                    And surprisingly she fell in love with me with just one letter. Thankyou very much Illusink.</p>
+                <h2>Mike Evans, Austria</h2>
+            </div>
+            <div class="box">
+                <h1>Next heir of Bill Gates.</h1>
+                <p>There's always a big dream in my head to become the next CEO of Microsoft. But there was no hope of
+                    light to achieve this goal. With the letter written with illusink pen, Bill Gates announced me his
+                    heir. This technology is awesome.</p>
+                <h2>Ledger Willson<br>(Next CEO Microsoft)</h2>
+            </div>
+            <div class="box">
+                <h1>Cristiano Ronaldo agreed to become my Coach.</h1>
+                <p>Football is my life and I dreamed to become a king in the game of Football like my ideal Cristiano
+                    Ronaldo. But my football coach was not that much talented as Roanldo. So, I pulled up the illusink
+                    pen and delivered a letter to Roanldo. Guess what? He agreed to become my coach. I'm so happy.</p>
+                <h2>Luis Jhonson, USA</h2>
+            </div>
+        </div>
+
+        <div class="social-links">
+            <img src="img/fb.png">
+            <img src="img/tw.png">
+            <img src="img/ig.png">
+        </div>
+    </div>
+    <script type="application/javascript">
+        var menuList = document.getElementById("menuList");
+        menuList.style.maxHeight = "0px";
+
+        function togglemenu() {
+            if (menuList.style.maxHeight == "0px") {
+                menuList.style.maxHeight = "130px";
+            }
+            else {
+                menuList.style.maxHeight = "0px";
+            }
+        }
+        var cp = document.getElementById("color-name");
+        var pen = document.getElementById("pen");
+
+        function gold() {
+            cp.innerHTML = "Gold";
+            pen.src = "img/pen.png";
+        }
+
+        function rosegold() {
+            cp.innerHTML = "Rose Gold";
+            pen.src = "img/rose-gold.png";
+        }
+
+        function blue() {
+            cp.innerHTML = "Blue";
+            pen.src = "img/blue.png";
+        }
+    </script>
+
+</body>
+
+</html>
