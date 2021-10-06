@@ -288,9 +288,12 @@ button:hover{
     .col-1 h2 {
         font-size: 35px;
     }
+    .col-1 p {
+        color:gray;
+    }
     .col-1 h3 {
         font-size: 15px;
-        color: #b7b7b7;
+        color: gray;
     }
     .reviews {
         flex-direction: column;
