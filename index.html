@@ -29,16 +29,16 @@
             <div class="col-1">
                 <h2>PEN V2<br>ILLUSINK 4</h2>
                 <h3>Pen with the illusionary ink to make words alive.</h3>
-                <p>(1 Pen/Upto 5 letters)</p>
+                <p>Write your dream with this dream ink.</p>
                 <h4>$600</h4>
                 <button type="button">Buy Now<img src="img/arrow.png"></button>
             </div>
             <div class="color-picker">
-                <h7 id="color-name">Gold</h7>
+                <!-- <h7 id="color-name">Gold</h7> -->
                 <div class="color">
-                    <div class="gold" onclick="gold()"></div>
-                    <div class="rose-gold" onclick="rosegold()"></div>
-                    <div class="blue" onclick="blue()"></div>
+                    <div class="gold" onclick="gold()" id="gold"></div>
+                    <div class="rose-gold" onclick="rosegold()" id="rosegold"></div>
+                    <div class="blue" onclick="blue()" id="blue"></div>
                 </div>
 
             </div>
@@ -72,33 +72,54 @@
         </div>
         <div class="reviews">
 
-            <div class="box">
-                <h1>Elon Musk invited for Dinner.</h1>
-                <p>I'm a mechanical engineer and always being a fan of Elon Musk. Always had a desire to meet him. I've
-                    listened about the illusink pen, purchased one and wrote a fan letter. And, OMG it really worked, he
-                    literally invited me for a Dinner. Best desicion ever.</p>
-                <h2>Chris Hamstopher, Russia</h2>
+            <div class="box">.
+                <div class="content">
+                    <h1>Elon Musk invited for Dinner.</h1>
+                    <p>I'm a mechanical engineer and always being a fan of Elon Musk. Always had a desire to meet him.
+                        I've
+                        listened about the illusink pen, purchased one and wrote a fan letter. And, OMG it really
+                        worked, he
+                        literally invited me for a Dinner. Best desicion ever.</p>
+                    <h2>Chris Hamstopher, Russia</h2>
+                </div>
+
             </div>
             <div class="box">
-                <h1>Going to marry Taylor Swift</h1>
-                <p>I always had a secret crush on the famous singer Taylor. I blindly love her but had no way to cross
-                    my path with her. With a little hope I purchased the illusink pen and wrote a love letter to her.
-                    And surprisingly she fell in love with me with just one letter. Thankyou very much Illusink.</p>
-                <h2>Mike Evans, Austria</h2>
+                <div class="content">
+                    <h1>Going to marry Taylor Swift</h1>
+                    <p>I always had a secret crush on the famous singer Taylor. I blindly love her but had no way to
+                        cross
+                        my path with her. With a little hope I purchased the illusink pen and wrote a love letter to
+                        her.
+                        And surprisingly she fell in love with me with just one letter. Thankyou very much Illusink.</p>
+                    <h2>Mike Evans, Austria</h2>
+                </div>
+
             </div>
             <div class="box">
-                <h1>Next heir of Bill Gates.</h1>
-                <p>There's always a big dream in my head to become the next CEO of Microsoft. But there was no hope of
-                    light to achieve this goal. With the letter written with illusink pen, Bill Gates announced me his
-                    heir. This technology is awesome.</p>
-                <h2>Ledger Willson<br>(Next CEO Microsoft)</h2>
+                <div class="content">
+                    <h1>Next heir of Bill Gates.</h1>
+                    <p>There's always a big dream in my head to become the next CEO of Microsoft. But there was no hope
+                        of
+                        light to achieve this goal. With the letter written with illusink pen, Bill Gates announced me
+                        his
+                        heir. This technology is awesome.</p>
+                    <h2>Ledger Willson<br>(Next CEO Microsoft)</h2>
+                </div>
+
             </div>
             <div class="box">
-                <h1>Cristiano Ronaldo agreed to become my Coach.</h1>
-                <p>Football is my life and I dreamed to become a king in the game of Football like my ideal Cristiano
-                    Ronaldo. But my football coach was not that much talented as Roanldo. So, I pulled up the illusink
-                    pen and delivered a letter to Roanldo. Guess what? He agreed to become my coach. I'm so happy.</p>
-                <h2>Luis Jhonson, USA</h2>
+                <div class="content">
+                    <h1>Cristiano Ronaldo agreed to become my Coach.</h1>
+                    <p>Football is my life and I dreamed to become a king in the game of Football like my ideal
+                        Cristiano
+                        Ronaldo. But my football coach was not that much talented as Roanldo. So, I pulled up the
+                        illusink
+                        pen and delivered a letter to Roanldo. Guess what? He agreed to become my coach. I'm so happy.
+                    </p>
+                    <h2>Luis Jhonson, USA</h2>
+                </div>
+
             </div>
         </div>
 
@@ -120,22 +141,34 @@
                 menuList.style.maxHeight = "0px";
             }
         }
-        var cp = document.getElementById("color-name");
+        // var cp = document.getElementById("color-name");
         var pen = document.getElementById("pen");
+        var goldd = document.getElementById("gold");
+        var rosegoldd = document.getElementById("rosegold");
+        var blued = document.getElementById("blue");
 
         function gold() {
-            cp.innerHTML = "Gold";
+            // cp.innerHTML = "Gold";
             pen.src = "img/pen.png";
+            goldd.style.borderWidth = "2px";
+            rosegoldd.style.borderWidth = "0";
+            blued.style.borderWidth = "0";
         }
 
         function rosegold() {
-            cp.innerHTML = "Rose Gold";
+            // cp.innerHTML = "Rose Gold";
             pen.src = "img/rose-gold.png";
+            goldd.style.borderWidth = "0";
+            rosegoldd.style.borderWidth = "2px";
+            blued.style.borderWidth = "0";
         }
 
         function blue() {
-            cp.innerHTML = "Blue";
+            // cp.innerHTML = "Blue";
             pen.src = "img/blue.png";
+            goldd.style.borderWidth = "0";
+            rosegoldd.style.borderWidth = "0";
+            blued.style.borderWidth = "2px";
         }
     </script>
 

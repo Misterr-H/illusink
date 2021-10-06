@@ -128,7 +128,9 @@ button:hover{
 }
 .col-2 .controller {
     width:90%;
+    
 }
+
 .color-box {
     position: absolute;
     right:0;
@@ -182,6 +184,12 @@ button:hover{
     cursor: pointer;
     transition: all 0.5s;
 }
+.content {
+    width:250px;
+    height: 300px;
+    margin:auto;
+}
+
 .reviews .box:hover {
     width: 270px;
     height: 320px;
@@ -208,17 +216,26 @@ button:hover{
 .color .gold {
     height: 30px;
     width: 30px;
+    margin:1px;
     background: gold;
+    border: solid 2px;
+    transition: all 0.1s;
 }
 .color .blue{
     height: 30px;
     width: 30px;
+    margin:1px;
     background: rgb(0, 102, 255);
+    transition: all 0.1s;
+    border: solid 0;
 }
 .color .rose-gold {
     height: 30px;
+    margin:1px;
     width: 30px;
     background: #B76E79;
+    transition: all 0.1s;
+    border: solid 0;
 }
 .color-picker {
     position: relative;
