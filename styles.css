@@ -290,6 +290,7 @@ button:hover{
     }
     .col-1 h3 {
         font-size: 15px;
+        color: #b7b7b7;
     }
     .reviews {
         flex-direction: column;
